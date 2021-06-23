@@ -32,3 +32,56 @@ function countdown () {
 countdown();
 
 setInterval(countdown, 1000);
+
+
+
+function lancerJeu(id) {
+    // Choix de l'utilisateur
+    let choixUtilisateur = id;
+  
+    // Choix de l'ordinateur
+    let choixOrdinateur = Math.random(); // chiffre entre 0 et 1
+  
+    if (choixOrdinateur < 0.34) {
+      choixOrdinateur = "caillou"
+    } else if (choixOrdinateur <= 0.67) {
+      choixOrdinateur = "papier"
+    } else {
+      choixOrdinateur = "ciseaux"
+    }
+  
+    const resultatEl = document.getElementById("resultat")
+    const gagne = function() {resultatEl.innerHTML = `Bravo tu as gagné 🎉🥳`}
+    const perdu = () => resultatEl.innerHTML = `Ooooh non c'est perdu 😓😓😓`
+    const egalite = () => resultatEl.innerHTML = `Egalité 😅`
+  
+    // Comparer les résultats
+    function compare(utilisateur, ordinateur) {
+  
+      document.getElementById("mainOrdinateur").innerHTML = `Les Daft Punk ont choisi : ${ordinateur}`
+  
+      if (utilisateur === ordinateur) {
+        egalite();
+      } else if (utilisateur === "caillou") {
+        if (ordinateur === "ciseau") {
+          gagne();
+        } else if (ordinateur === "papier") {
+          perdu();
+        }
+      } else if (utilisateur === "papier") {
+        if (ordinateur === "ciseau") {
+          perdu();
+        } else if (ordinateur === "caillou") {
+          gagne();
+        }
+      } else if (utilisateur === "ciseau") {
+        if (ordinateur === "papier") {
+          gagne();
+        } else if (ordinateur === "caillou") {
+          perdu();
+        }
+      }
+    }
+    compare(choixUtilisateur, choixOrdinateur);
+  }
+  

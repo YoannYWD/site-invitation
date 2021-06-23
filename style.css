@@ -19,9 +19,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0!important;
     min-height: 100vh;
-
 }
 
 h1 {
@@ -57,7 +56,7 @@ h1 {
     color: black;
 }
 
-button {
+.homeBtn {
     margin-top: 3rem;
     font-family: 'Zen Dots', sans-serif!important;
     text-transform: uppercase!important;
@@ -69,11 +68,11 @@ button {
     margin-top: 2rem!important;
     transition: 0.5s;
 }
-button:hover {
+.homeBtn:hover {
     background-color: #FFFFFF!important;
     transition: 0.5s;
 }
-button:active {
+.homeBtn:active {
     background-color: black!important;
     color: #FFFFFF;
 }
@@ -86,9 +85,16 @@ button:active {
 .container {
     margin: 50px 0;
 }
+.container-fluid {
+    margin: 50px 0;
+}
+.containerText {
+    background-color: rgba(255, 115, 0);
+}
 
 h2 {
     font-family: 'Zen Dots', sans-serif!important;
+    color: black;
     margin: 50px 0!important;
 }
 
@@ -117,6 +123,60 @@ p {
 .img-spec3 {
     background-position: top center;
 }
+
+.contact a {
+    text-decoration: none;
+}
+
+.fas {
+    margin-right: 20px;
+}
+
+.mail {
+    color: black;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    background-color: rgba(255, 115, 0);
+    border: 1px solid black;
+    padding: 0!important;
+    border-radius: 5px!important;
+    transition: 0.5s;
+    margin: 0!important;
+}
+.mail:hover {
+    background-color: #FFFFFF!important;
+    transition: 0.5s;
+}
+.mail:active {
+    background-color: black!important;
+    color: #FFFFFF;
+}
+
+.countdownPageRepeat {
+    background-image: linear-gradient(
+        rgba(255, 115, 0, 0.4),
+        rgba(255, 115, 0, 0.4)),
+        url(./images/fond.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0!important;
+    min-height: 50vh;
+}
+
+.containerRobot {
+    background-color: #F6F6F6;
+    margin: 0;
+}
+
+
+
+
+
+
 
 .map {
     position: relative;

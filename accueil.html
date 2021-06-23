@@ -25,17 +25,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
 
+    <!-- ICONS -->    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
 </head>
 <body>
+
     <div class="container">
         <div class="row">
             <div class="col text-center">
                 <h2>I am born in 70's...</h2>
             </div>
         </div>
-    </div>
-
-    <div class="container">
         <div class="row">
             <div class="col-xl-3 col-6 mt-1 p-2">
                 <div class="img-galery" style="background-image: url(./images/1.jpg)"></div>
@@ -61,9 +63,9 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid containerText">
         <div class="row">
-            <div class="col text-center">
+            <div class="col-10 offset-1 text-center">
                 <h2>...et me voilà aujourd'hui à l'aube de mes 50 ans.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
             </div>
@@ -84,9 +86,9 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid containerText">
         <div class="row">
-            <div class="col text-center">
+            <div class="col-10 offset-1 text-center">
                 <h2>RDV le 25 Septembre 2021 à 18h00 au Grand Chaillou!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
             </div>
@@ -95,8 +97,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 contact text-center">
                 <h2>Réponse attendue pour le 15 Juillet</h2>
+                <a href="mailto:dasoulard@wanadoo.fr"><p class="mail"><i class="fas fa-at"></i>Envoyer un mail</p></a>
+                <p><i class="fas fa-mobile-alt"></i>06.85.10.15.58</p>
             </div>
             <div class="col-md-6">
                 <div class="map">
@@ -105,6 +109,61 @@
               </div>
         </div>
     </div>
+
+    <div class="container-fluid countdownPageRepeat">
+        <h2>Alors d'ici là...</h2>
+        <div class="countdown-container">
+            <div class="countdown-el days-c">
+                <p class="big-text" id="days">0</p>
+                <span>Jours</span>
+            </div>
+            <div class="countdown-el hours-c">
+                <p class="big-text" id="hours">0</p>
+                <span>Heures</span>
+            </div>
+            <div class="countdown-el mins-c">
+                <p class="big-text" id="mins">0</p>
+                <span>Minutes</span>
+            </div>
+            <div class="countdown-el seconds-c">
+                <p class="big-text" id="seconds">0</p>
+                <span>Secondes</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid containerRobot">
+        <div class="row align-items-center">
+          <div class="col-md-7  text-md-start">
+            <h2>...tentez votre chance contre les Daft Punk !</h2>
+            <h1 class="mb-4 display-3 fw-bold lh-sm">Chifoumi </h1>
+            <h2>Good luck 😀👏 </h2>
+  
+            <!-- Choix papier ciseau caillou -->
+            <div class="text-center">
+            <button id="papier" onclick="lancerJeu(this.id)" type="button" class="btn btn-primary btn-lg rounded-pill">
+              <i class="far fa-hand-paper"></i> Papier
+            </button>
+            <button id="ciseau" 
+            onclick="lancerJeu(this.id)"type="button" class="btn btn-success btn-lg  rounded-pill">
+              <i class="far fa-hand-scissors"></i> Ciseau
+            </button>
+            <button id="caillou" 
+            onclick="lancerJeu(this.id)"type="button" class="btn btn-warning btn-lg  rounded-pill">
+              <i class="far fa-hand-rock"></i> Caillou
+            </button>
+            </div>
+  
+            <!-- Résultat -->
+            <div class="result">
+              <p class="font-weight-normal text-black-50" id="mainOrdinateur"></p>
+              <h2 id="resultat"></h2>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center"><img class="img-fluid" src="./images/daftpunk.jpg" height="1000" alt="" /></div>
+        </div>
+      </div>
+
 
     
 
