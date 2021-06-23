@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-body {
+/* COUNTDOWN PAGE
+********************************************/
+
+
+.countdownPage {
     background-image: linear-gradient(
         rgba(255, 115, 0, 0.4),
         rgba(255, 115, 0, 0.4)),
@@ -75,7 +78,47 @@ button:active {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 500px) {
+
+
+/* HOME PAGE
+********************************************/
+
+h2 {
+    font-family: 'Zen Dots', sans-serif!important;
+    margin: 30px 0!important;
+}
+
+
+.img-galery {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 500px;
+}
+.img-spec1 {
+    background-position: top center;
+    height: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
     h1 {
         font-size: 2rem!important;
     }
@@ -91,10 +134,21 @@ button:active {
     button {
         font-size: 0.8em!important;
     }
+    .img-galery {
+        height: 300px;
+    }
+    .img-spec1 {
+        background-position: top center;
+        height: 150px;
+    }
+    .img-spec2 {
+        background-position: center;
+        height: 150px;
+    }
 }
 
 
-@media screen and (min-width: 501px) and (max-width: 850px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
     h1 {
         font-size: 3rem!important;
     }
@@ -111,4 +165,17 @@ button:active {
     button {
         font-size: 1.2em!important;
     }
+    .img-galery {
+        height: 300px;
+    }
+    .img-spec1 {
+        background-position: top center;
+        height: 150px;
+    }
+    .img-spec2 {
+        background-position: center;
+        height: 150px;
+    }
+    
+    
 }
