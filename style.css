@@ -83,10 +83,10 @@ h1 {
 ********************************************/
 
 .container {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 .container-fluid {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 .containerText {
     background-color: rgba(255, 115, 0);
@@ -95,12 +95,19 @@ h1 {
 h2 {
     font-family: 'Zen Dots', sans-serif!important;
     color: black;
-    margin: 50px 0!important;
+    margin: 40px 0!important;
 }
 
 p {
     font-family: 'ZCOOL XiaoWei', sans-serif;
     font-size: 1.6em;  
+}
+
+.first-title {
+    margin: 10px 0 40px 0!important;
+}
+.title-countdown {
+    margin-bottom: 0!important;
 }
 
 
@@ -122,6 +129,13 @@ p {
 }
 .img-spec3 {
     background-position: top center;
+}
+.img-spec5 {
+    background-position: center;
+    height: 700px;
+}
+.img-spec6 {
+    height: 700px;
 }
 
 .contact a {
@@ -235,6 +249,9 @@ p {
     .img-spec4{
         background-position: top center;
     }
+    .img-spec5 {
+        height: 150px;
+    }
 }
 
 
@@ -264,6 +281,9 @@ p {
     }
     .img-spec2 {
         background-position: center;
+        height: 150px;
+    }
+    .img-spec5 {
         height: 150px;
     }
 

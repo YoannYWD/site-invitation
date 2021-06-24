@@ -36,11 +36,11 @@ setInterval(countdown, 1000);
 
 
 function lancerJeu(id) {
-    // Choix de l'utilisateur
+    // CHOIX DE L'UTILISATEUR
     let choixUtilisateur = id;
   
-    // Choix de l'ordinateur
-    let choixOrdinateur = Math.random(); // chiffre entre 0 et 1
+    // CHOIX DE L'ORDINATEUR
+    let choixOrdinateur = Math.random(); 
   
     if (choixOrdinateur < 0.34) {
       choixOrdinateur = "caillou"
@@ -51,14 +51,14 @@ function lancerJeu(id) {
     }
   
     const resultatEl = document.getElementById("resultat")
-    const gagne = function() {resultatEl.innerHTML = `Bravo tu as gagné 🎉🥳`}
-    const perdu = () => resultatEl.innerHTML = `Ooooh non c'est perdu 😓😓😓`
+    const gagne = function() {resultatEl.innerHTML = `Bravo tu as gagné!🎉🥳`}
+    const perdu = () => resultatEl.innerHTML = `Ooooh non c'est perdu... 😓😓😓`
     const egalite = () => resultatEl.innerHTML = `Egalité 😅`
   
-    // Comparer les résultats
+    // COMPARER LES RESULTATS
     function compare(utilisateur, ordinateur) {
   
-      document.getElementById("mainOrdinateur").innerHTML = `Les Daft Punk ont choisi : ${ordinateur}`
+      document.getElementById("mainOrdinateur").innerHTML = `Les Daft Punk ont choisi : ${ordinateur} !`
   
       if (utilisateur === ordinateur) {
         egalite();
