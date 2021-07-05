@@ -158,6 +158,11 @@ ul {
     margin-right: 20px;
 }
 
+h4 {
+    font-family: 'Zen Dots', sans-serif!important;
+    color: black;
+}
+
 .mail {
     color: black;
     font-family: 'Raleway', sans-serif;
