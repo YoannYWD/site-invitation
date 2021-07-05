@@ -141,7 +141,7 @@ p {
 }
 
 .firstText .fas {
-    color: black;
+    color: #FFFFFF;
 }
 ul {
     list-style: none;
@@ -150,15 +150,14 @@ ul {
 .contact a {
     text-decoration: none;
 }
-.contact h2 {
-    margin-top: 0!important;
-}
+
 
 .fas {
     margin-right: 20px;
 }
 
 h4 {
+    margin-top: 30px!important;
     font-family: 'Zen Dots', sans-serif!important;
     color: black;
 }
